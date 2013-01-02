@@ -94,6 +94,12 @@
 	
 	$.fn.extend({
 		jSlide: function(param) {
+			/*
+			 * param说明：{
+			 *	slideTime: 800,	图片滑动效果的执行时间
+			 *	stayTime: 3000	当前图片停留的展示时间
+			 * }
+			*/
 			$.each($(this), function() {
 				new SlideAlbums(param, $(this));
 			});
